@@ -1,0 +1,42 @@
+#cookies {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(22,22,22,0.9);
+    width: 100%;
+    padding:2rem;
+    z-index: 1999; 
+    
+    button {
+        background-color: #4CAF50;
+        border: none;
+        color:white;
+        padding: 0.5rem 3rem;
+        float:right;
+        font-size:1.5rem;
+        margin:1rem;
+        &::after {
+            content: "";
+            clear:both;
+        }
+        &:hover {
+          filter: brightness(120%);
+        }
+    }
+    div {
+        font-size:1.5rem;
+        color:white;
+        float:left;
+        text-align: center;
+        &::after {
+            content: "";
+            clear:both;
+        }
+    }
+    a {
+        color:brown;
+        &:hover {
+            color:red;
+        }
+    }
+}

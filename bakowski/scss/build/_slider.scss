@@ -1,0 +1,127 @@
+.slider {
+    position: absolute;
+    top:50%;
+    left:0;
+    z-index: 3;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: column;
+    a {
+        border:1px solid inherit;
+        width:1rem; 
+        height: 1rem;
+        border-radius: 1rem;
+        margin: 2rem;
+        background-color: rgba(255,255,255,0.3);
+        &:hover {
+            cursor: pointer;
+            background-color:white;
+        }
+        &.active2 {
+            background-color:white;
+        }
+    }
+}
+.scrollbottom {
+    animation-name:scrollbottom;
+    animation-duration:$animation_length;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:3;
+    opacity:1;
+    
+}
+
+.scrolltop {
+    animation-name:scrolltop;
+    animation-duration:$animation_length;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:3;
+    opacity:1;
+    
+}
+
+@keyframes scrollbottom {
+    from {
+        opacity:0;
+        background-color:white;
+        top:100%;
+        
+    }
+    to {
+        opacity:1;
+        top:0;
+        
+    }
+}
+@keyframes scrolltop {
+    from {
+        opacity:0;
+        background-color:white;
+        top:-100%;
+        
+    }
+    to {
+        opacity:1;
+
+        top:0;
+        
+    }
+}
+
+.awaytop {
+    animation-name:scroll_away_top;
+    animation-duration:$animation_length;
+    position:absolute;
+    top:-100%;
+    left:0;
+    z-index:3;
+    opacity:1;
+}
+
+.awaybottom {
+    animation-name:scroll_away_bottom;
+    animation-duration:$animation_length;
+    position:absolute;
+    top:100%;
+    left:0;
+    z-index:3;
+    opacity:1;
+}
+
+@keyframes scroll_away_top {
+    from {
+        opacity:1;
+        top:0;
+    }
+    to {
+        opacity:0;
+        top:-100%;
+        
+    }
+} 
+@keyframes scroll_away_bottom {
+    from {
+        opacity:1;
+        top:0;
+    }
+    to {
+        opacity:0;
+        top:100%;
+        
+    }
+} 
+
+.scrollbottom,
+.scrolltop,
+.awaybottom,
+.awaytop {
+    display: block;
+}
+
+section {
+    display: none;
+}

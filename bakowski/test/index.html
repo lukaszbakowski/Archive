@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            /* Podpowiedź przyklejona do kursora */
+            img {
+                width: 500px;
+            }
+
+            .tooltip {
+                color: #fff;
+                text-decoration: none;
+                position: relative;
+                cursor: pointer;
+            }
+            .tooltip .spantip {
+                display: none;
+            }
+            .tooltip:hover .spantip {
+                color: #fff;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 11;
+                overflow: hidden;
+                background-color: red;
+                transform: translate(
+                    -10%,
+                    0
+                ); /* change this for your wanted position */
+            }
+
+            .tipstyle {
+                color: #fff;
+                background-color: #000;
+                padding: 10px;
+                line-height: 25px;
+            }
+
+            .tipimg:hover {
+                opacity: 0.8;
+            }
+            #container {
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <a class="tooltip" href="google.com">
+            <div id="container">
+                <div class="spantip">
+                    <p class="tipstyle">
+                        Tytuł<br />
+                        <i>Concept</i> Atrybuty
+                    </p>
+                </div>
+            </div>
+            <img
+                src="https://static.rfstat.com/renderforest/images/v2/logos/renderforest-logo2.jpg"
+                class="tipimg"
+                id="adamtrener"
+            />
+        </a>
+        <script src="./test.js"></script>
+    </body>
+</html>

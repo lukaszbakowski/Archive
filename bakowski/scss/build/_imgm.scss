@@ -1,0 +1,45 @@
+.img_cnt {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: space-between;
+    flex-wrap:wrap;
+    figure {
+       
+        margin: 0 auto;
+        margin-top:1rem;
+        width: 75%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        figcaption {
+            position: relative;
+            i {
+                font-style:normal;
+                text-align: justify;
+            }
+
+
+            &:nth-of-type(1) {
+                font-weight:bold;
+            }
+
+        }
+        &:hover {
+            cursor: pointer;
+            img {
+                opacity: 0.7;
+            }
+
+        }
+        a.dwn {
+            display:none;
+
+        }
+        &.ciek {
+            
+        }
+    }
+
+}

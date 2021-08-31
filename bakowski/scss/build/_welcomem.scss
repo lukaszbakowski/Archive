@@ -1,0 +1,129 @@
+.welcome {
+    width: 100%;
+    height:100vh;
+    padding-top:11rem;
+    position:relative;
+    
+    color:white;
+    span {
+
+        &::after {
+            padding:1rem;
+            position:absolute;
+            font-weight: bold;
+            font-size:2rem;
+            color:darkorchid;
+            text-shadow:3px 3px 3px black;
+
+        }
+        &:nth-of-type(1)::after {
+            content: "</>";
+            text-shadow: 3px 3px 3px black;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            color:orangered;
+            font-size:7rem;
+            border:3px solid white;
+            box-shadow: 3px 3px 3px black;
+            padding:2.0rem;
+            border-radius: 4rem;
+        }
+        &:nth-of-type(2)::after {
+            content: "SQL";
+            left:77%;
+            top:45%;
+            transform: rotate(15deg);
+            border-top:4px solid white;
+            padding-left:2rem;
+        }
+        &:nth-of-type(3)::after {
+            content: "Java{}";
+            left:4%;
+            top:44%;
+            transform: rotate(5.5rad);
+        }
+        &:nth-of-type(4)::after {
+            content: "C++";
+            left:13%;
+            top:7%;
+            transform: rotate(33deg);
+        }
+        &:nth-of-type(5)::after {
+            content: "CSS3";
+            border:5px solid antiquewhite;
+            left:19%;
+            top:69%;
+            transform: rotate(0.7rad);
+            border-radius:5px;
+        }
+        &:nth-of-type(6)::after {
+            content: "HTML5";
+            left:67%;
+            top:59%;
+            transform: rotate(-35deg);
+            border-bottom:5px solid white;
+            
+            border-radius: 0.5rem;
+        }
+        &:nth-of-type(7)::after {
+            content: "<? PHP ?>";
+            left:49%;
+            top:15%;
+            transform: rotate(-11deg);
+        }
+        &:nth-of-type(8)::after {
+            content: "Java.Script();";
+            left:44%;
+            top:77%;
+            transform: rotate(-43deg);
+        }
+        &:nth-of-type(8)::after {
+            color:white;
+            content: '"Everything Should Be Made as 
+        Simple as Possible, But Not Simpler" - A. Einstein';
+            left:11%;
+            top:15%;
+            transform: rotate(-27deg);
+            max-width: 37rem;
+        }
+        &:nth-of-type(9)::after {
+            
+            content: 'Prostota jest kluczem do sukcesu';
+            left:44%;
+            top:77%;
+            transform: rotate(23deg);
+        }
+    }
+    button {
+     display: none;
+        
+    }
+}
+.skills {
+    
+    margin-left: 1rem;
+    text-align: left;
+    tr {
+        td {
+            
+            &:nth-of-type(1) {
+                
+                min-width: 17rem;
+                
+                padding-left: 1rem;
+                &::before {
+                    content: "- ";
+                }
+            }
+            &:nth-of-type(2) {
+                text-align: center;
+            }
+        }
+    }
+}
+.flexit {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

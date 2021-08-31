@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 22 maj 2019, 21:11:01
+    Author     : looky
+*/
+
+@media screen and (min-device-width: 641px) {
+
+    @import "./build/_global.scss";
+    @import "./build/_header.scss";
+    @import "./build/_footer.scss";
+    @import "./build/_welcome.scss";
+    //SLIDER
+    $animation_length : 1s;
+    @import "./build/_slider.scss";
+    @import "./build/_cookies.scss";
+    @import "./build/_open.scss";
+    @import "./build/_form.scss";
+    @import "./build/_img.scss";
+}
+
+@media screen and (max-device-width: 640.99px) {
+    @import "./build/_globalm.scss";
+    @import "./build/_headerm.scss";
+    @import "./build/_footerm.scss";
+    @import "./build/_welcomem.scss";
+    //SLIDER
+    $animation_length : 1s;
+    @import "./build/_sliderm.scss";
+    @import "./build/_cookiesm.scss";
+    @import "./build/_openm.scss";
+    @import "./build/_formm.scss";
+    @import "./build/_imgm.scss";
+}
